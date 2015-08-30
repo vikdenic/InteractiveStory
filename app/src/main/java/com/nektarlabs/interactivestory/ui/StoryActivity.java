@@ -6,8 +6,11 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.nektarlabs.interactivestory.R;
+import com.nektarlabs.interactivestory.model.Page;
 
 public class StoryActivity extends Activity {
+
+    private Page[] mPages;
 
     public static final String TAG = StoryActivity.class.getSimpleName();
 
@@ -24,5 +27,7 @@ public class StoryActivity extends Activity {
         }
 
         Log.d(TAG, name);
+
+        mPages = new Page[7];
     }
 }
